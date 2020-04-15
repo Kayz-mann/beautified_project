@@ -1,0 +1,430 @@
+*,html,body
+{
+    margin:0;
+    padding:0;
+   
+}
+ body{
+     height:3000px;
+ }
+
+header{
+    
+    line-height: 112px; /* underlines when cursor is on each character */
+    height:112px;
+    position: fixed;
+    z-index:1;
+    width:100%;
+}
+
+.secondary{
+    background-color: deepskyblue;
+    box-shadow: 0px 0px 17px 0px;
+    transition: all 0.5s ease-in;
+}
+
+ul{
+    list-style: none;
+    
+}
+
+ul li{
+    display:inline-block; /* arranges every nav item in one line */
+    
+}
+
+nav{
+    float:right;
+} 
+
+.logo img{
+    margin-top: 30px;
+}
+
+header nav ul li a{
+    margin:30px;
+    font-weight: bold;
+    color:white;
+    transition: all 0.5s ease-in;
+    
+}
+
+header nav ul li a:hover{
+    text-decoration:none;
+    color:red;
+}
+
+.img1{
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../image/complex.jpg);
+    background-size:100% 100%;
+
+}
+
+.slider, .slider ul,.slider li{ 
+    height:710px;
+    width:100%;
+    color:white;
+    text-align:center;
+}
+
+.slider h2{
+    font-weight: bold;
+    margin-top: 270px;
+}
+
+.slider span{
+    color:orange;
+}
+
+.slider a{
+    padding:10px  40px;
+    background-color: orange;
+}
+
+.slider a.btn-half{
+    background-color: skyblue;
+    color:white;
+    transition: 0.5s ease-in;
+}
+
+.slider a.btn-half:hover{
+    opacity:0.9;
+    background-color: dodgerblue;
+}
+
+.slider a.btn-full{
+    background-color:orange;
+    color:white;
+    transition: 0.5s ease-in;
+}
+
+.slider a.btn-full:hover{
+    opacity:0.9;
+    background-color: #e67e22;
+}
+
+.img2{
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../image/street_view.jpg);
+    background-size: 100% 100%;
+}
+
+.img3{
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../image/university.jpg);
+    background-size: 100% 100%;
+}
+
+.slider i{
+    font-size: 35px;
+    margin-right:10px;
+}
+
+.intro-area{
+    position:relative;
+    padding:100px 0px;
+    text-align: center;
+}
+
+.sub-heading{
+    position: relative; 
+    margin-bottom:75px;
+}
+
+.sub-heading:before{
+    content:"";
+    position: absolute;
+    top: 100%;
+    left:50%;
+    margin-left: -3%;
+    width:6%;
+    height: 1px;
+    background-color: deepskyblue;
+    z-index: 1;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease; /* firefox compatibility */
+    -ms-transition: 0.3s ease;  /* internet explrer compatibility */
+    -o-transition: 0.3s ease;   /* opera compatibility */
+    transition: 0.3s ease;
+
+}
+
+.sub-heading:hover:before{ /* before going to the element it will not act umtil you put ur cursor o it */
+    width:24%;
+    margin-left: -12px;
+}
+
+.sub-heading:after{
+    position:absolute;
+    content:"";
+    top:100%;
+    left:50%;
+    margin-left:-12%;
+    width:24%;
+    height:1px;
+    background-color: #e1e1e1;
+}
+
+.sub-heading p{
+    color:#818181;
+    display: inline-block;
+    padding: 0px 0px 20px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    position: relative;
+}
+
+.intro-block{
+    position:relative;
+    background:#f7f7f7;
+    margin: 50px 0px 0px;
+    text-align: center;
+    padding: 70px 25px 40px;
+}
+
+.intro-block:hover, .intro-block.active{
+    background:#0AABE1;
+}
+
+.intro-block:hover{
+    transition: .6s ease;
+    -webkit-transition: .6s ease;
+    -moz-transition: .6s ease;
+    -o-transition: .6s ease;
+    -ms-transition: .6s ease;
+}
+
+.intro-block .intro-icon{
+    position:absolute;
+    top: -31px;
+    left:50%;
+    margin-left: -31px;
+
+}
+
+.intro-block .fa{
+    width: 63px;
+    height: 63px;
+    font-size:30px;
+    color:white !important;
+    line-height: 2;
+    background: deepskyblue; 
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 10px #cceef9;
+}
+
+
+
+.intro-block:hover , .fa, .intro-block.active .fa{
+    background: white;
+    color:deepskyblue;
+    box-shadow: 0px 0px 0px 10px deepskyblue;
+}
+
+.intro-block h3{
+    font-size:18px;
+    color:deepskyblue;
+    font-weight:700;
+    text-transform:uppercase;
+    margin-bottom:15px;
+    margin-top: 10px;
+
+}
+
+.intro-block p{
+    color: #505050;
+
+}
+
+.feature-area{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0,0,0,0.8)), url(../image/venice_italy.jpg) ;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.feature-area h2{
+    padding-top: 40px;
+}
+
+.title h2, p, h3{
+    color:white;
+}
+
+.single-feature{
+    position:relative;
+    width:325px;
+    float:left;
+    padding: 30px 0;
+    text-align:center;
+  border-right: 1px solid #65c8e5;
+    border-bottom: solid #65c8e5;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+}
+
+.feature-icon:after{
+    content:"";
+    display: table;
+}
+
+.feature-icon:after{
+    clear:both;
+}
+
+.featured-icon{
+    display:inline-block;
+    margin-bottom:20px;
+}
+
+.single-feature i.fa{
+    border:2px solid #fff;
+    padding: 15px;
+    border-radius: 50%;
+    font-size:30px;
+    background-color:#00a7dd; 
+    color:white;
+    width:64px;
+    height:64px;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+}
+
+.feature-block:hover .single-feature{
+    border-color:white;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+
+}
+
+.single-feature:hover .featured-icon .fa{
+    border:2px solid #00a7dd;
+    background:white;
+    color:deepskyblue;
+}
+
+.single-feature:nth-of-type(even){
+    border-right:none;
+}
+
+.single-feature:nth-last-child(2){
+    border-right:none;
+}
+
+.single-feature:last-child{
+    border-right:none;
+}
+
+.feature-mockup{
+    bottom:-225px;
+    position:relative;
+}
+
+.title .sub-heading p{
+    color:white;
+    
+}
+
+.title h2 {
+    color:black;
+}
+
+.sub-heading p{
+    font-size: small;
+}
+
+.this-image{
+    height:400px;
+   
+    margin-top: 200px;
+    margin-right: 100px;
+}
+
+.more-feature-area  .title .sub-heading h2{
+    color:black;
+}
+
+.more-feature-area .title .sub-heading p{
+    color:darkgrey;
+
+}
+
+.more-feature-area{
+    padding:100px 0;
+}
+
+.work{
+    color:black
+}
+
+.feature-list ul{
+    position:relative;
+    margin-bottom: 30px;
+    padding-left:80px;
+}
+
+
+.feature-list li:hover i{
+    color:white;
+    background:#00a7dd;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -o-transition: .5s ease;
+    -ms-transition: .5s ease;
+
+}
+
+.feature-icon{
+    position:absolute;
+    left:0;
+
+}
+
+.feature-icon i{
+    width:63px;
+    height:63px;
+    text-align:center;
+    background:white;
+    color:deepskyblue;
+    border-radius: 50%;
+    border: 2px solid deepskyblue;
+    line-height:63px;
+}
+
+
+.feature-details h3{
+    color:deepskyblue;
+    font-weight:700;
+    text-transform:uppercase;
+
+}
+
+.feature-details p{
+    color:#616161;
+    font-weight:200;
+
+}
+
+.more-feature-area img{
+    margin-right:100px;
+}
+
+.testimonials{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) url('../image/perspective.jpg');
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+    
+
+
+
+    
